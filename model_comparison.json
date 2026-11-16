@@ -1,0 +1,35 @@
+{
+  "best_model": "ExtraTrees",
+  "validation_rows": 292,
+  "training_rows": 1168,
+  "features": [
+    "OverallQual",
+    "GrLivArea",
+    "GarageCars",
+    "TotalBsmtSF",
+    "FullBath",
+    "BedroomAbvGr",
+    "YearBuilt",
+    "LotArea"
+  ],
+  "results": [
+    {
+      "model": "ExtraTrees",
+      "RMSE": 27848.07,
+      "MAE": 17986.78,
+      "R2": 0.8989
+    },
+    {
+      "model": "RandomForest",
+      "RMSE": 29479.76,
+      "MAE": 18492.81,
+      "R2": 0.8867
+    },
+    {
+      "model": "LinearRegression",
+      "RMSE": 38876.76,
+      "MAE": 24533.44,
+      "R2": 0.803
+    }
+  ]
+}

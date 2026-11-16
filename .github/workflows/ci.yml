@@ -1,0 +1,23 @@
+name: House Price ML CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  train-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Train baseline and track experiments
+        run: python train.py --n_estimators 100 --max_depth 12
+      - name: Run tests
+        run: pytest -v --tb=short
