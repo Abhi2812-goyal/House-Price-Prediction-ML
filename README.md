@@ -91,3 +91,14 @@ The source data is historical Ames, Iowa data from 2006–2010. It is not repres
 ## Team
 
 Add team member names, roll numbers, section and individual contributions before submission.
+
+
+## Live Deployment
+
+**Live Application:** https://house-price-prediction-ml-b4lx.onrender.com/
+
+**API Documentation:** https://house-price-prediction-ml-b4lx.onrender.com/docs
+
+**Health Check:** https://house-price-prediction-ml-b4lx.onrender.com/health
+
+**GitHub Repository:** https://github.com/Abhi2812-goyal/House-Price-Prediction-ML
